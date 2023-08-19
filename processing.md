@@ -36,10 +36,10 @@ find . -type f -name "*$target_extension" | while read filepath; do
     process_file "$filepath" "$foldername"
 done
 
-#######find and copy all files into a new folder, assumes your in the folder where all the genomes are located
+#######find and copy all files into a new folder, assumes your are in the folder where all the genomes are located
 #tell it the extension for each genome
 mkdir aggregated_genomes
-target_extension="_contigs.fasta"
+target_extension="_scaffolds.fasta"
 
 # Specify the destination folder where the files will be copied
 destination_folder="./aggregated_genomes"
