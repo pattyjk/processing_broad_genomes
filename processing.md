@@ -51,7 +51,10 @@ mkdir -p "$destination_folder"
 find . -type f -name "*$target_extension" -exec cp {} "$destination_folder" \;
 
 #remove extra files
+cd aggregated_genomes/
 rm *final*
+ rm K77*
+rm  misc_broken_scaffolds.fasta
 
 #run checkM on the genomes
 cd /hpcstor6/scratch01/p/patrick.kearns/genomes
